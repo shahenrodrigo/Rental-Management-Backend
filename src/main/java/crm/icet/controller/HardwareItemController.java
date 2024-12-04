@@ -1,14 +1,8 @@
 package crm.icet.controller;
 
-import crm.icet.dto.Customer;
 import crm.icet.dto.HardwareItem;
-import crm.icet.entity.CustomerEntity;
 import crm.icet.entity.HardwareItemEntity;
-import crm.icet.service.CustomerService;
 import crm.icet.service.HardwareItemService;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,7 +19,7 @@ public class HardwareItemController {
 
     @PostMapping("/add-item")
 
-    public HardwareItemEntity addCustomer(@RequestBody HardwareItem hardwareItem){
+    public HardwareItemEntity addItem(@RequestBody HardwareItem hardwareItem){
         return hardwareItemService.addItem(hardwareItem);
     }
 

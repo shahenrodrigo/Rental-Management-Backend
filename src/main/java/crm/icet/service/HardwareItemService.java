@@ -1,8 +1,6 @@
 package crm.icet.service;
 
-import crm.icet.dto.Customer;
 import crm.icet.dto.HardwareItem;
-import crm.icet.entity.CustomerEntity;
 import crm.icet.entity.HardwareItemEntity;
 
 import java.util.List;

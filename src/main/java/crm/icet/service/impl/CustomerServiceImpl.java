@@ -1,4 +1,4 @@
-package crm.icet.service;
+package crm.icet.service.impl;
 
 import crm.icet.dto.Customer;
 import crm.icet.entity.CustomerEntity;

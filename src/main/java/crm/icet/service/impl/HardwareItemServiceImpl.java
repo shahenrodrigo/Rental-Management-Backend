@@ -1,11 +1,9 @@
-package crm.icet.service;
+package crm.icet.service.impl;
 
-import crm.icet.dto.Customer;
 import crm.icet.dto.HardwareItem;
-import crm.icet.entity.CustomerEntity;
 import crm.icet.entity.HardwareItemEntity;
-import crm.icet.repository.CustomerRepository;
 import crm.icet.repository.HardwareItemRepository;
+import crm.icet.service.HardwareItemService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
@@ -17,7 +15,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 
-public class HardwareItemServiceImpl implements HardwareItemService{
+public class HardwareItemServiceImpl implements HardwareItemService {
 
     private final HardwareItemRepository repository;
     private final ModelMapper mapper;

@@ -1,5 +1,8 @@
 package crm.icet.repository;
 
-public interface RentalRepository {
+import crm.icet.entity.RentalEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RentalRepository extends JpaRepository<RentalEntity,Integer> {
 
 }
