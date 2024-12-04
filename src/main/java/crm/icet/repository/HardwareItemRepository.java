@@ -1,4 +1,9 @@
 package crm.icet.repository;
 
-public interface HardwareItemRepository {
+import crm.icet.entity.CustomerEntity;
+import crm.icet.entity.HardwareItemEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface HardwareItemRepository extends JpaRepository<HardwareItemEntity,Integer> {
+
 }
